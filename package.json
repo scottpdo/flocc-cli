@@ -1,0 +1,22 @@
+{
+  "name": "flocc-cli",
+  "version": "1.0.0",
+  "description": "Command line interface for Flocc.js",
+  "bin": {
+    "flocc": "./bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottpdo/flocc-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottpdo/flocc-cli/issues"
+  },
+  "homepage": "https://github.com/scottpdo/flocc-cli#readme",
+  "dependencies": {
+    "yargs": "^14.2.0"
+  }
+}
