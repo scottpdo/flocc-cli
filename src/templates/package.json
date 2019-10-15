@@ -1,0 +1,17 @@
+{
+  "name": "flocc-project",
+  "description": "A project created with Flocc.js.",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"webpack -w\" \"webpack-dev-server --open\""
+  },
+  "dependencies": {
+    "flocc": "0.2.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
