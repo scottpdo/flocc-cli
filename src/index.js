@@ -4,6 +4,18 @@ const path = require("path");
 const shell = require("shelljs");
 const argv = require("yargs").argv;
 
+const floccVersion = argv.ver ? argv.ver : "latest";
+
+function parseContents(filename) {
+  let contents = fs
+    .readFileSync(path.resolve(__dirname, "templates/", filename))
+    .toString();
+  if (filename === "package.json") {
+    contents = contents.replace("{{ floccVersion }}", floccVersion);
+  }
+  return contents;
+}
+
 function createFloccProject(name = "flocc-project") {
   const cwd = process.cwd();
   let dir = cwd + "/" + name;
@@ -26,7 +38,7 @@ function createFloccProject(name = "flocc-project") {
     console.log(`Creating file ${filename}... [${i + 1} / ${files.length}]`);
     fs.writeFileSync(
       path.resolve(dir, filename),
-      fs.readFileSync(path.resolve(__dirname, "templates/", filename)),
+      parseContents(filename),
       "utf-8"
     );
   });
