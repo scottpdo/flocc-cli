@@ -1,6 +1,6 @@
 {
   "name": "flocc-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Command line interface for Flocc.js",
   "bin": {
     "flocc": "./src/index.js"
@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/scottpdo/flocc-cli#readme",
   "dependencies": {
-    "shelljs": "^0.8.3",
-    "yargs": "^14.2.0"
+    "shelljs": "^0.8.4",
+    "yargs": "^16.0.3"
   },
   "devDependencies": {
-    "concurrently": "^5.0.0"
+    "concurrently": "^5.3.0"
   }
 }

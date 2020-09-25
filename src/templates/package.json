@@ -6,7 +6,8 @@
     "start": "concurrently \"webpack -w\" \"webpack-dev-server --open\""
   },
   "dependencies": {
-    "flocc": "{{ floccVersion }}"
+    "flocc": "{{ floccVersion }}",
+    "flocc-ui": "latest"
   },
   "devDependencies": {
     "concurrently": "^5.0.0",
